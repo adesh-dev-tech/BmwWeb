@@ -1,0 +1,586 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  padding: 1.5rem;
+  background-image: url('bmw-2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  padding: 0rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top {
+  border-radius: 25px;
+  padding: 2rem;
+  background: #d0d0d0;
+  background: linear-gradient(to top, #000000, #808080, #ffffff);
+  height: 150vh;
+  overflow: hidden;
+}
+
+.fa-car {
+  margin: 0 0.5rem;
+  width: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fa-car:hover{
+  transform: scale(1.1);
+}
+
+.nav_middle {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.nav_middle a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.8s ease-in-out;
+}
+
+.nav_middle a:hover {
+  transition: scale(0.9);
+  font-weight: 500;
+  color: #1e90ff;
+}
+
+.nav_right {
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  background: transparent;
+  border-radius: 25px;
+  border: 2px solid #3e7bb8;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.9s ease-in;
+}
+
+.nav_right:hover {
+  background: #19242f;
+  color: #ffffff;
+}
+
+.mobile_nav_btn {
+  display: none;
+  cursor: pointer;
+}
+
+.res {
+  font-size: 1.5rem;
+}
+
+.mobile_nav_btn > .fa-xmark {
+  display: none;
+}
+
+.banner {
+  text-align: center;
+  margin: 4rem 1rem 1rem 1rem;
+}
+
+.banner h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.banner p {
+  margin: 1rem 0;
+}
+
+.banner button {
+  padding: 0.7rem 1rem;
+  font-weight: 600;
+  background: transparent;
+  color: #000;
+  border-radius: 25px;
+  border: 2px solid #3e7bb8;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.9s ease-in-out;
+  text-align: center;
+}
+
+.banner button:hover {
+  background: #19242f;
+  color: white;
+}
+
+.fa-circle-play {
+  margin: 0 0.4rem;
+}
+
+.carImg {
+  width: 100%;
+  height: 100vh;
+  object-fit: scale-down;
+}
+
+.about {
+  height: 50vh;
+  margin: 1rem 0;
+  border-radius: 30px;
+  padding: 2rem 1rem 1rem 1rem;
+  color: #ffff;
+  background-image: url('bmw-3.jpg');
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+}
+
+.about_box {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.about_left {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.about_right {
+  width: 80%;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.feature {
+  background: linear-gradient(to right, #003b5c, #c0c0c0, #1c1c1c);
+  color: #ffffff;
+  border-radius: 25px;
+}
+
+.feature_box {
+  width: 95%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.feature_top {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature_top > h1 {
+  font-size: 3rem;
+}
+
+.feature_top > p {
+  font-weight: 200;
+  font-size: 1.3rem;
+  width: 25%;
+}
+
+.feature_middle {
+  padding: 2.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.car_card {
+  width: 22rem;
+}
+
+.car_card > img {
+  width: 23rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 25px;
+  filter: grayscale(1);
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.car_card > img:hover {
+  filter: grayscale(0);
+}
+
+.car_con > p {
+  font-weight: 200;
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+.car_con > h3 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.feature_down {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.feature_down > button {
+  padding: 0.7rem 1rem;
+  font-weight: 600;
+  background: black;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.feature_down > button:hover {
+  background: #cfdada;
+  color: black;
+}
+
+.gallery {
+  margin: 2rem 0;
+}
+
+.gallery_box {
+  padding: 1rem;
+}
+
+.gallery_box > h3 {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.photos {
+  margin: 1rem 0;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.photo {
+  height: 30rem;
+  object-fit: cover;
+  filter: grayscale(1);
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.photo:hover {
+  filter: grayscale(0);
+}
+
+.bottom {
+  background: black;
+  color: white;
+  border-radius: 25px;
+}
+
+footer {
+  width: 95%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.foot_top > h3 {
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+
+.details {
+  padding: 1rem 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.username {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid white;
+  padding: 0.5rem 0;
+  width: 45%;
+}
+
+.username > input {
+  width: 90%;
+  font-size: 1.2rem;
+  background: transparent;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.email {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid white;
+  padding: 0.5rem 0;
+  width: 45%;
+}
+
+.email > input {
+  width: 90%;
+  font-size: 1.2rem;
+  background: transparent;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.details > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  width: 3rem;
+  border-radius: 50%;
+  background: #bfcb7c;
+  color: rgb(0, 0, 0);
+  border: 1px solid white;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.details > button:hover {
+  background-color: #ffffff;
+}
+
+.foot_middle {
+  display: flex;
+  gap: 1rem;
+  padding: 3rem 0;
+  border-bottom: 1px solid gray;
+}
+
+.foot_mid_left {
+  width: 50%;
+}
+
+.foot_mid_left > p {
+  width: 80%;
+  font-weight: 200;
+  margin: 1rem 0;
+  text-align: justify;
+}
+
+.foot_mid_right {
+  display: flex;
+  gap: 1rem;
+}
+
+.foot_mid_r_links {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.foot_mid_r_links > h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.foot_mid_r_links > a {
+  text-decoration: none;
+  color: white;
+  padding: 0.2rem;
+  font-weight: 300;
+  border-radius: 45%;
+  transition: all 0.3s ease-in;
+}
+
+.foot_mid_r_links > a:hover {
+  background: #bfcb7c;
+  color: #000;
+}
+
+.foot_down {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.foot_d_copy {
+  font-weight: 200;
+}
+
+.foot_d_icons > i {
+  padding: 0 0.5rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.foot_d_icons > i:hover {
+  color: #bfcb7c;
+  transform: scale(1.2);
+}
+
+@media (max-width: 1024px) {
+  .carImg {
+    height: 85vh;
+  }
+
+  .feature_top > h1 {
+    font-size: 2.5rem;
+  }
+  .feature_top p {
+    font-size: 1rem;
+  }
+  .car_card {
+    width: 18rem;
+  }
+
+  .car_card > img {
+    width: 18rem;
+    height: 15rem;
+  }
+
+  .car_con > h3 {
+    font-size: 1.3rem;
+  }
+  .car_con > p {
+    font-size: 0.8rem;
+  }
+  .gallery_box > h3 {
+    font-size: 2.3rem;
+  }
+  .photo {
+    width: 19rem;
+    height: 20rem;
+  }
+
+  .foot_top > h3 {
+    font-size: 2.5rem;
+  }
+
+  .username,
+  .username > input {
+    font-size: 1rem;
+  }
+  .email,
+  .email > input {
+    font-size: 1rem;
+  }
+  .foot_mid_left > p {
+    font-size: 0.9rem;
+  }
+
+  .foot_mid_r_links > h3 {
+    font-size: 1.2rem;
+  }
+  .foot_mid_r_links > a {
+    font-size: 1rem;
+  }
+
+  .foot_d_copy {
+    font-size: 0.9rem;
+  }
+
+  .foot_d_icons > i {
+    font-size: 1.1rem;
+  }
+}
+
+@media (425px <= width <= 800px) {
+  .active > .nav_middle,
+  .active > .nav_right {
+    transform: translateX(0%);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .active > .mobile_nav_btn > .fa-xmark {
+    display: block;
+  }
+
+  .active > .mobile_nav_btn > .fa-bars {
+    display: none;
+  }
+
+  nav {
+    padding: 0;
+    position: relative;
+  }
+
+  .mobile_nav_btn {
+    display: block;
+    z-index: 999;
+  }
+
+  .banner > h1 {
+    font-size: 2.7rem;
+  }
+  .banner > p {
+    font-size: 0.8rem;
+  }
+
+  .banner > button {
+    margin: 1rem 0 0;
+  }
+  .carImg {
+    height: 80vh;
+  }
+
+  .about_left {
+    font-size: 1.3rem;
+  }
+
+  .about_right {
+    font-size: 1rem;
+  }
+
+  .feature_top > h1 {
+    font-size: 2rem;
+  }
+  .feature_top > p {
+    width: 30%;
+    font-size: 0.9rem;
+  }
+  .feature_middle {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .car_card {
+    width: 100%;
+    display: flex;
+    gap: 1.5rem;
+  }
+  .car_card > img {
+    height: 13rem;
+  }
+  .car_con > h3 {
+    margin: 0 0 0.5rem;
+  }
+
+  .photos {
+    display: flex;
+    justify-content: center;
+  }
+  .foot_top > h3 {
+    font-size: 2rem;
+  }
+}
